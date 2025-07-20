@@ -1,0 +1,28 @@
+{
+  "name": "boilerplate-service-base-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app",
+    "clean": "rm -Rf node_modules/ && rm -f ./package-lock.json && npm cache clear --force",
+    "rebuild": "npm run clean && npm i --save && npm i --save-dev",
+    "build": "npm run rebuild && npm run deploy",
+    "deploy": "docker build --no-cache -t boilerplate-service-base-nodejs .",
+    "scan": "docker run --rm -v ./tmp:/root/.cache/ -v //var/run/docker.sock:/var/run/docker.sock aquasec/trivy image --severity CRITICAL boilerplate-service-base-nodejs",
+    "scan1": "docker run --rm -v ./tmp:/root/.cache/ -v //var/run/docker.sock:/var/run/docker.sock aquasec/trivy image --severity boilerplate-service-base-nodejs",
+    "buildScan": "npm run build && npm run scan"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^4.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^6.13.8",
+    "winston": "^3.17.0"
+  }
+}
