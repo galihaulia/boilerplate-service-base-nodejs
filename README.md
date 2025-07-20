@@ -6,6 +6,7 @@ Boilerplate ini dirancang sebagai fondasi awal untuk membangun aplikasi backend 
 
 ## 📁 Struktur Proyek
 
+```
 .
 ├── config/
 │   ├── connection/           # Koneksi database & konfigurasi
@@ -19,7 +20,7 @@ Boilerplate ini dirancang sebagai fondasi awal untuk membangun aplikasi backend 
 ├── package.json              # Metadata proyek & dependensi
 ├── .env.example              # Contoh environment variable
 └── README.md                 # Dokumentasi proyek ini
-
+```
 ---
 
 ## 🔧 Fitur Utama
@@ -58,11 +59,7 @@ npm run dev
 
 ## ⚙️ Environment Variables
 
-Buat file `.env` berdasarkan `.env.example`. Contoh:
-
-PORT=3000
-DB_URI=mongodb://localhost:27017/namadatabase
-NODE_ENV=development
+> Belum tersedia.
 
 ---
 
@@ -102,7 +99,7 @@ npm run scan
 
 ## 🔬 Testing
 
-> Belum tersedia. Direkomendasikan untuk menambahkan `jest` dan `supertest` untuk testing unit dan integrasi.
+> Belum tersedia.
 
 ---
 
