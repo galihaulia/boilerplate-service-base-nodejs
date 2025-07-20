@@ -103,7 +103,7 @@ npm run scan
 
 ---
 
-## 🧠 Saran Pengembangan Lanjutan
+## 🧠 Pengembangan Lanjutan
 
 - Tambahkan autentikasi berbasis JWT
 - Middleware error handler global
