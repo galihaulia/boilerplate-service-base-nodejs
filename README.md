@@ -115,7 +115,7 @@ npm run scan
 
 ## 👤 Author
 
-Galih Haulia
+Galih Aulia Al Hakim
 
 ---
 
